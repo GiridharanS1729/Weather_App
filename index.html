@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" href="./assets/images/icon.png">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#000" />
+    <meta name="background-color" content="#222" />
+
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="card">
+            <div class="search-div">
+                <input type="text" placeholder="Enter city name" required class="city">
+                <button id="mute">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+
+                <div class="search" id="btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <h4 class="error">Please enter valid city name</h4>
+
+            <div class="weather">
+                <h1 class="city-name"></h1>
+                <h1 class="climate"></h1>
+                <p class="desc"></p>
+                <h1 class="temp"></h1>
+                <div class="details">
+                    <div class="col">
+                        <h3>Humidity</h3>
+                        <p class="humidity"></p>
+                    </div>
+                    <div class="col">
+                        <h3>Wind</h3>
+                        <p class="wind"></p>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="col">
+                        <h3>Max-Temp</h3>
+                        <p class="max-temp"></p>
+                    </div>
+                    <div class="col">
+                        <h3>Min-Temp</h3>
+                        <p class="min-temp"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="credits">Made by Giridharan S</p>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+
+</html>
